@@ -1,0 +1,48 @@
+<html>
+<head>
+        <title>Iniciando com jQuery</title>
+<link rel="stylesheet" type="text/css" href=" {{ url_for('static', filename='home.css') }}" media="screen" />
+ 
+<script src="https://code.jquery.com/jquery-3.5.1.min.js">
+</script>
+<script type="text/javascript" src="{{ url_for('static', filename=)}}"></script>
+<script> 
+$(function() {
+    $("#carrossel"). jCarouselLite({
+        btnPrev: '.prev', 
+        btnNext: '.next',
+        visible: 3
+    })
+})
+</script> 
+</head>
+  
+<body>
+
+<div id="content">
+	<div id="carrossel">
+		<ul>
+			<li>
+				<img src="http://www.placehold.it/200x150" alt="Nome da Imagem" title="Nome da Imagem"/>
+			</li>
+			<li>
+				<img src="http://www.placehold.it/200x150" alt="Nome da Imagem" title="Nome da Imagem"/>
+			</li>
+			<li>
+				<img src="http://www.placehold.it/200x150" alt="Nome da Imagem" title="Nome da Imagem"/>
+			</li>
+			<li>
+				<img src="http://www.placehold.it/200x150" alt="Nome da Imagem" title="Nome da Imagem"/>
+			</li>
+			<li>
+				<img src="http://www.placehold.it/200x150" alt="Nome da Imagem" title="Nome da Imagem"/>
+			</li>
+		</ul>
+	</div>
+	<nav id="menu-carrossel">
+		<a href="#" class="prev" title="Anterior">Anterior</a>
+		<a href="#" class="next" title="Próximo">Próximo</a>
+	</nav>
+</div>
+</body>
+</html>
