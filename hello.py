@@ -10,9 +10,9 @@ def index():
     return render_template("planeta.html")
 
 # Rota que renderiza uma página HTML
-@app.route('/pagina-html')
-def pagina_html():
-    return render_template('pagina.html')
+@app.route('/saiba_mais')
+def saiba_mais():
+    return render_template('saiba_mais.html')
 
 
 # Rota com variável na URL
